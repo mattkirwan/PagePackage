@@ -1,0 +1,28 @@
+{
+	"name": "mattkirwan/PagePackage",
+	"description": "A package of code that provides CRUD operations on a page module",
+	"authors": [
+		{
+			"name": "Matt Kirwan",
+			"homepage": "http://www.mattkirwan.com/",
+			"role": "developer"
+		}
+	],
+	"autoload": {
+		"psr-0": {
+			"MattKirwan\\PagePackage\\": "src/"
+		}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:mattkirwan/ModulePackage.git"
+		}
+	],
+	"requires": {
+		"symfony/form": "2.3.*@dev",
+		"symfony/validator": "2.3.*@dev",
+		"doctrine/dbal": "2.4.*@dev",
+		"mattkirwan/ModulePackage": "1.0.*"
+	}
+}
