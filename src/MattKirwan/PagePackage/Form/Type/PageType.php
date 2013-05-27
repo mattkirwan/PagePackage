@@ -1,4 +1,4 @@
-<?php
+s<?php
 
 namespace MattKirwan\PagePackage\Form\Type;
 
@@ -21,24 +21,20 @@ class PageType extends AbstractType
 	public function buildForm(FormBuilderInterface $builder, array $option)
 	{
 		$builder->add('title', 'text', array(
-			'constraints' => array(new Assert\NotBlank()),
 			'label' => 'Page Title',
 			'attr' => array('class' => 'span12'),
 		));
 
 		$builder->add('slug', 'text', array(
-			'constraints' => array(new Assert\NotBlank()),
 			'read_only' => true,
 			'attr' => array('class' => 'span12'),
 		));
 
 		$builder->add('excerpt', 'text', array(
-			'constraints' => array(new Assert\NotBlank()),
 			'attr' => array('class' => 'span12'),
 		));
 
 		$builder->add('data', 'textarea', array(
-			'constraints' => array(new Assert\NotBlank()),
 			'attr' => array('class' => 'tiny_mce span12'),
 		));
 
